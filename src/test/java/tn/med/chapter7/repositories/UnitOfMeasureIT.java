@@ -27,6 +27,6 @@ public class UnitOfMeasureIT {
 	@Test
 	public void findByUom() throws Exception {
 		Optional<UnitOfMeasure> uomOptional = unitOfMeasureRepository.findByUom("mg");
-		assertEquals("mg", uomOptional.get().getUom());
+		assertEquals("g", uomOptional.get().getUom());
 	}
 }
